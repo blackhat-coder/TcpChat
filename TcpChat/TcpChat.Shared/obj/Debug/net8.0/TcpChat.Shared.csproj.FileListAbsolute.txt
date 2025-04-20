@@ -1,0 +1,12 @@
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\bin\Debug\net8.0\TcpChat.Shared.deps.json
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\bin\Debug\net8.0\TcpChat.Shared.dll
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\bin\Debug\net8.0\TcpChat.Shared.pdb
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\obj\Debug\net8.0\TcpChat.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\obj\Debug\net8.0\TcpChat.Shared.AssemblyInfoInputs.cache
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\obj\Debug\net8.0\TcpChat.Shared.AssemblyInfo.cs
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\obj\Debug\net8.0\TcpChat.Shared.csproj.CoreCompileInputs.cache
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\obj\Debug\net8.0\TcpChat.Shared.sourcelink.json
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\obj\Debug\net8.0\TcpChat.Shared.dll
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\obj\Debug\net8.0\refint\TcpChat.Shared.dll
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\obj\Debug\net8.0\TcpChat.Shared.pdb
+C:\Users\aboh.israel\OneDrive\Documents\Codes\Networking\TcpChat\TcpChat\TcpChat.Shared\obj\Debug\net8.0\ref\TcpChat.Shared.dll
