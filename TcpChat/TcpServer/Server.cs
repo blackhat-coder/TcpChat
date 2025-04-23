@@ -157,7 +157,6 @@ public class Server
                     ChatRooms = _chatRooms.Select(x => x.Value.Name).ToList()
                 };
 
-                Console.WriteLine("Writing chat rooms");
                 await StreamUtils.WriteMessageAsync<ChatRoomsResponse>(netStream, response);
 
                 _ = Task.Run(() => ProcessNodeMessages(node));
@@ -178,7 +177,6 @@ public class Server
 
     private async Task<bool> NegotiateNodeName(NetworkStream stream, string nameRequest)
     {
-        Console.WriteLine($"Name REq: {nameRequest}");
         var msg = JsonSerializer.Deserialize<MessageRequest>(nameRequest);
         if (msg?.Type == MessageType.UserNameNegotiation)
         {
