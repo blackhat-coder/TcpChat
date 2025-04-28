@@ -154,7 +154,7 @@ public class Server
                 var response = new ChatRoomsResponse
                 {
                     Message = $"Welcome to the server {node.Name}, see available Chat Rooms",
-                    ChatRooms = _chatRooms.Select(x => x.Value.Name).ToList()
+                    ChatRooms = _chatRooms.Select(x => new ChatRoomDto { Name = x.Value.Name, MemCount = x.Value.Members.Count }).ToList()
                 };
 
                 await StreamUtils.WriteMessageAsync<ChatRoomsResponse>(netStream, response);
@@ -309,6 +309,7 @@ public class Server
         else
         {
             var chatRoom = new ChatRoom(command.Value);
+            chatRoom.Members.TryAdd(node.Id, true);
             _chatRooms.TryAdd(chatRoom.Id, chatRoom);
 
             node.InChatRoom = true;
@@ -327,7 +328,7 @@ public class Server
         var response = new ViewChatRoomsResponse
         {
             Success = true,
-            Rooms = _chatRooms.Select(x => x.Value.Name).ToList()
+            Rooms = _chatRooms.Select(x => new ChatRoomDto { Name = x.Value.Name, MemCount = x.Value.Members.Count }).ToList()
         };
 
         await SendCommandResponse<ViewChatRoomsResponse>(stream, response, CommandType.ViewChatRooms);

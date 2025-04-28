@@ -549,7 +549,7 @@ public class Messenger
 
 public static class ConsoleExt
 {
-    public static void WriteChatRooms(List<string> chatRooms)
+    public static void WriteChatRooms(List<ChatRoomDto> chatRooms)
     {
         if (chatRooms == null || chatRooms.Count == 0)
         {
@@ -559,7 +559,7 @@ public static class ConsoleExt
 
         for (int i = 0; i < chatRooms.Count; i++)
         {
-            Console.WriteLine($"{i + 1}. {chatRooms[i]}");
+            Console.WriteLine($"{i + 1}. {chatRooms[i].Name} ({chatRooms[i].MemCount} Online)");
         }
     }
 }
