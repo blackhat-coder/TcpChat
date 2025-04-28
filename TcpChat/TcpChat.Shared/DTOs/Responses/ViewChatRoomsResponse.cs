@@ -8,6 +8,6 @@ namespace Tcp.Shared.DTOs.Responses
 {
     public class ViewChatRoomsResponse : Result
     {
-        public List<string> Rooms { get; set; }
+        public List<ChatRoomDto> Rooms { get; set; }
     }
 }
