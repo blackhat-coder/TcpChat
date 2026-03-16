@@ -1,0 +1,21 @@
+name: multi-event CI/CD
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+  pull-request:
+    branches:
+      - master
+
+jobs:
+  multi-eventJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Echo Basic Information"
+        run:
+          echo "REF: $GITHUB_REF"
+          echo "JOB ID: $GITHUB_JOB"
+          echo "Action: $GITHUB_ACTION"
+          echo "Actor: $GITHUB_ACTOR"
