@@ -14,13 +14,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Echo Github Ref"
-        run: echo "REF: ${{ github.ref }}"
-        
-      - name: "Echo Github Job Id"
-        run: echo "JOB ID: ${{ github.job }}"
-        
-      - name: "Echo Github Action"
-        run: echo "Action: ${{ github.action }}"
-        
-      - name: "Echo Github Actor"
-        run: echo "Actor: ${{ github.actor }}"
