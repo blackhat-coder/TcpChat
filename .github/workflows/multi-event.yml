@@ -14,3 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Echo Github Ref"
+        run: echo "REF: t"
