@@ -1,4 +1,4 @@
-name: multi-event CI/CD
+name: multi event CI/CD
 
 on:
   push:
@@ -10,14 +10,17 @@ on:
       - master
 
 jobs:
-  multi-eventJob:
+  multi_event_job: # Changed from multi-eventJob
     runs-on: ubuntu-latest
     steps:
       - name: "Echo Github Ref"
-        run: echo "REF: $GITHUB_REF"
+        run: echo "REF: ${{ github.ref }}"
+        
       - name: "Echo Github Job Id"
-        run: echo "JOB ID: $GITHUB_JOB"
+        run: echo "JOB ID: ${{ github.job }}"
+        
       - name: "Echo Github Action"
-        run: echo "Action: $GITHUB_ACTION"
-      - name: "Echo Gihub actor"
-        run: echo "Actor: $GITHUB_ACTOR"
+        run: echo "Action: ${{ github.action }}"
+        
+      - name: "Echo Github Actor"
+        run: echo "Actor: ${{ github.actor }}"
