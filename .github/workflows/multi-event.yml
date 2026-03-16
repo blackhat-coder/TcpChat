@@ -15,5 +15,7 @@ jobs:
     steps:
       - name: "Echo Github Ref"
         run: | 
-          echo "This is my name"
-          echo "Another line"
+          echo "Ref: $GITHUB_REF"
+          echo "Job Id: $GITHUB_JOB"
+          echo "Action: $GITHUB_ACTION"
+          echo "Actor: $GITHUB_ACTOR"
